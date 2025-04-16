@@ -46,107 +46,27 @@ Features:
 - OPTIONS method analysis
 - Error handling
 
-### 4. Directory Enumerator (`dir_enum.py`)
-Enumerates common files and directories on a web server.
+## Note on Common Tools
 
-Usage:
-```bash
-python dir_enum.py <url>
-```
+For common web security tasks, we recommend using established tools:
 
-Features:
-- Common path checking
-- Multi-threaded scanning
-- Status code analysis
-- Error handling
+- Directory enumeration: `dirb`, `gobuster`, `dirsearch`
+- SQL injection testing: `sqlmap`
+- XSS scanning: `XSStrike`, `XSS Hunter`
+- Subdomain enumeration: `subfinder`, `amass`, `sublist3r`
 
-### 5. SQL Injection Tester (`sql_injection_tester.py`)
-Tests for basic SQL injection vulnerabilities.
+## Dependencies
 
-Usage:
-```bash
-python sql_injection_tester.py <url>
-```
-
-Features:
-- Common SQL payloads
-- Parameter testing
-- Error message detection
-- URL parameter analysis
-
-### 6. XSS Scanner (`xss_scanner.py`)
-Tests for basic Cross-Site Scripting vulnerabilities.
-
-Usage:
-```bash
-python xss_scanner.py <url>
-```
-
-Features:
-- Common XSS payloads
-- Parameter testing
-- Response analysis
-- Error handling
-
-### 7. Subdomain Enumerator (`subdomain_enum.py`)
-Enumerates possible subdomains for a domain.
-
-Usage:
-```bash
-python subdomain_enum.py <domain>
-```
-
-Features:
-- Common subdomain checking
-- Multi-threaded scanning
-- Status code analysis
-- Error handling
-
-## Requirements
-- Python 3.x
-- requests
-- beautifulsoup4
-- concurrent.futures
-
-Install dependencies:
+Required packages:
 ```bash
 pip install requests beautifulsoup4
 ```
 
-## Usage Examples
+## Contributing
 
-1. Scan a URL:
-```bash
-python url_scanner.py
-```
-
-2. Test HTTP methods:
-```bash
-python http_method_tester.py http://example.com
-```
-
-3. Enumerate directories:
-```bash
-python dir_enum.py http://example.com
-```
-
-4. Test for SQL injection:
-```bash
-python sql_injection_tester.py http://example.com/page.php?id=1
-```
-
-5. Test for XSS:
-```bash
-python xss_scanner.py http://example.com/page.php?input=test
-```
-
-6. Enumerate subdomains:
-```bash
-python subdomain_enum.py example.com
-```
-
-## Notes
-- These tools are for educational purposes only
-- Always get permission before testing websites
-- Be aware of legal implications
-- Use responsibly and ethically 
+Contributions are welcome! Please feel free to:
+- Add new unique implementations
+- Improve existing code
+- Add documentation
+- Fix bugs
+- Suggest new topics 
